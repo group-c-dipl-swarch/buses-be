@@ -1,8 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const db = require('./queries')
+const db = require('./infra/database/queries')
 const app = express()
-const port = 3000
+const port = 3030
 app.use(bodyParser.json())
 app.use(
     bodyParser.urlencoded({
